@@ -1,0 +1,3 @@
+{
+  "MONGO_URL": "mongodb+srv://osama:drosamaelsayed@contactkeeper-l3khk.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
