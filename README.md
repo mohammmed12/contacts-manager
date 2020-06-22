@@ -1,7 +1,7 @@
 # Contact Keeper
 
 > Full stack MERN contact manager with React hooks, context & JWT authentication.
-> This is the full app. The API can be found [here](https://github.com/bradtraversy/contact_keeper_api) with documented endpoints
+> This is the full app.
 
 ## Usage
 
