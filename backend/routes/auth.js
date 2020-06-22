@@ -8,7 +8,7 @@ const auth = require("../middlewares/auth");
 
 const router = express.Router();
 
-// get/ api/auth -- get logged in uswr -- private
+// get/ api/auth -- get logged in user -- private
 router.get("/", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
@@ -20,7 +20,7 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
-// post/ api/auth -- register a user -- public
+// post/ api/auth -- login a user -- public
 router.post(
   "/",
   [

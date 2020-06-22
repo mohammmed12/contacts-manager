@@ -20,7 +20,7 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
-// post/ api/contacts -- get all contacts -- public
+// post/ api/contacts -- create anew contact -- public
 router.post(
   "/",
   [auth, check("name", "please name is required").not().isEmpty()],
@@ -50,16 +50,15 @@ router.post(
   }
 );
 
-// upfdate contact
+// update contact
 router.put("/:id", (req, res) => {
   res.send("update a contact");
 });
 
 // post/ api/users -- register a user -- public
 router.delete("/:id", (req, res) => {
-  res.send(
-    "you just hit tjhe route that deletes a contact actualluy a specific contact"
-  );
+  res.send("you just hit the delete route to delete a specific contact");
+  000;
 });
 
 module.exports = router;
